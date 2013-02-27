@@ -3,7 +3,7 @@
 include("www/speed/Tester.php");
 
 $callbackUrl = "http://www.binaryl.com/speed/callback.php";
-$DahmiansApi = "a28b1daea7444ec8ba34163237c9915c";
+$apiKey = "PUT API KEY HERE";
 $dulles = "Dulles_IE8.DSL";
 
 function testHelper($apiKeyString, $callbackUrlString, $logFileNameString, $countryString, $urlArray)
@@ -23,4 +23,4 @@ $amazonUrls = array(
 	"http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=apple&x=0&y=0",
 	"http://www.amazon.com/books-used-books-textbooks/b/ref=sa_menu_bo6?ie=UTF8&node=283155"
 );
-testHelper($DahmiansApi, $callbackUrl, "tests/thirdParty/amazon.dulles.ie8.csv", $dulles, $amazonUrls);
+testHelper($apiKey, $callbackUrl, "tests/thirdParty/amazon.dulles.ie8.csv", $dulles, $amazonUrls);
